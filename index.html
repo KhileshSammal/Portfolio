@@ -1,599 +1,333 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C9NSH1YKBC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khilesh Sammal | Performance Marketing Expert</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-bounce-slow {
+            animation: bounce-slow 4s ease-in-out infinite;
+        }
+        .selection-blue::selection {
+            background-color: rgba(59, 130, 246, 0.3);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #0a0a0a;
+        }
+    </style>
+</head>
+<body class="text-zinc-300 font-sans selection-blue">
 
-  gtag('config', 'G-C9NSH1YKBC');
-</script>
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="khileshsammal" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/khileshsammal?trk=profile-badge">Khilesh Sammal</a></div>
-              
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Side Navigation (Desktop) -->
+    <nav class="fixed left-0 top-0 h-screen w-20 hidden lg:flex flex-col items-center py-12 border-r border-zinc-800 bg-[#0a0a0a] z-50">
+        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold mb-12">K</div>
+        <div class="flex flex-col gap-8 flex-1 justify-center">
+            <a href="#home" class="nav-link p-3 rounded-xl text-blue-500 bg-zinc-800 transition-all" data-section="home">
+                <i data-lucide="user" class="w-5 h-5"></i>
+            </a>
+            <a href="#experience" class="nav-link p-3 rounded-xl text-zinc-500 hover:text-zinc-300 transition-all" data-section="experience">
+                <i data-lucide="briefcase" class="w-5 h-5"></i>
+            </a>
+            <a href="#skills" class="nav-link p-3 rounded-xl text-zinc-500 hover:text-zinc-300 transition-all" data-section="skills">
+                <i data-lucide="layout" class="w-5 h-5"></i>
+            </a>
+            <a href="#education" class="nav-link p-3 rounded-xl text-zinc-500 hover:text-zinc-300 transition-all" data-section="education">
+                <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+            </a>
+            <a href="#contact" class="nav-link p-3 rounded-xl text-zinc-500 hover:text-zinc-300 transition-all" data-section="contact">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+            </a>
+        </div>
+    </nav>
 
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <main class="lg:pl-20">
+        <!-- Mobile Header -->
+        <div class="lg:hidden p-6 flex justify-between items-center bg-[#0a0a0a] border-b border-zinc-800 sticky top-0 z-50">
+            <span class="font-bold text-white tracking-tighter uppercase">Khilesh Sammal</span>
+            <i data-lucide="mail" class="w-5 h-5 text-blue-500"></i>
+        </div>
 
-        <title>Portfolio | Khilesh Sammal </title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Khilesh Sammal</a>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">
-                                <i class="uil uil-estate nav__icon"></i> Home
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#qualification" class="nav__link">
-                                <i class="uil uil-briefcase-alt nav__icon"></i> Qualification
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#project" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Project
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contact
-                            </a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
-                </div>
-
-                <div class="nav__btns">
-                    <!-- theme change button -->
-                <i class="uil uil-moon change-theme" onclick="myFunction()" id="theme-button"></i>
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/khileshsammal/" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin-alt"></i>
-                            </a>
-                            <a href="https://github.com/KhileshSammal" target="_blank" class="home__social-icon">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
-                        </div>
-                        <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home__blob-img" x='20' y='17' href="assets/img/profile_img.jpeg"/>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="home__data">
-                            <h1 class="home__title">Khilesh Sammal</h1>
-                            <h3 class="home__subtitle">Google Ads Operations Analyst </h3>
-                            <p class="home__description">Seeking a growth-oriented role where I can apply my Google Ads expertise 
-                                to drive results, develop professionally, and contribute to organizational success.</p>
-                            <a download="" href="assets/pdf/Khilesh sammal resume.pdf" class="button button--flex">
-                                Download CV<i class="uil uil-download-alt button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">scroll down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center px-6 md:px-20 max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row items-center justify-between w-full gap-12">
+                <div class="flex-1 space-y-6">
+                    <span class="text-blue-500 font-mono tracking-widest uppercase text-sm">Based in Uttarakhand, India</span>
+                    <h1 class="text-5xl md:text-8xl font-bold text-white tracking-tight leading-[0.9]">
+                        Performance <br>
+                        <span class="text-zinc-500">Marketing Expert.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-zinc-400 max-w-2xl leading-relaxed">
+                        I drive growth by combining paid media precision with technical automation. 
+                        Currently optimizing campaigns at <span class="text-white font-medium">BeasyFit</span> and scaling e-commerce brands through freelance consultancy.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#experience" class="px-8 py-4 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-500 transition-all flex items-center gap-2">
+                            Explore Experience <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
+                        <div class="flex items-center gap-2">
+                            <a href="https://linkedin.com/in/khileshsammal" target="_blank" class="p-4 rounded-full border border-zinc-800 hover:bg-zinc-900 transition-all text-zinc-400 hover:text-white">
+                                <i data-lucide="linkedin" class="w-5 h-5"></i>
+                            </a>
+                            <a href="mailto:khileshsammal.work@gmail.com" class="p-4 rounded-full border border-zinc-800 hover:bg-zinc-900 transition-all text-zinc-400 hover:text-white">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </section>
 
+                <!-- Profile Image Area -->
+                <div class="flex-shrink-0 relative">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 group">
+                        <div class="absolute inset-0 bg-blue-600 rounded-3xl rotate-6 opacity-20 group-hover:rotate-12 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 border border-zinc-800 rounded-3xl -rotate-3 group-hover:-rotate-6 transition-transform duration-500"></div>
+                        <div class="relative h-full w-full bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 shadow-2xl">
+                            <!-- REPLACE THE URL BELOW WITH YOUR PHOTO PATH OR URL -->
+                            <img src="your-photo.jpg" alt="Khilesh Sammal" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1511367461989-f85a21fda167?fit=crop&w=800&q=80'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/80 via-transparent to-transparent opacity-60"></div>
+                        </div>
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-4 -right-4 bg-zinc-900 border border-zinc-800 p-4 rounded-2xl shadow-xl hidden md:block animate-bounce-slow">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500">
+                                    <i data-lucide="trending-up" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white text-xs font-bold leading-tight">Growth Driver</p>
+                                    <p class="text-zinc-500 text-[10px]">Data-Centric ROI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Experience Section -->
+        <section id="experience" class="py-24 px-6 md:px-20 max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-16 flex items-center gap-4">
+                <i data-lucide="briefcase" class="text-blue-500"></i> Professional Journey
+            </h2>
+            <div class="space-y-20" id="experience-container">
+                <!-- Experience items will be rendered here by JS -->
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-24 px-6 md:px-20 max-w-5xl mx-auto border-t border-zinc-900">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-4">
+                <i data-lucide="layout" class="text-blue-500"></i> Technical Arsenal
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8" id="skills-container">
+                <!-- Skills will be rendered here by JS -->
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-24 px-6 md:px-20 max-w-5xl mx-auto border-t border-zinc-900">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-4">
+                <i data-lucide="graduation-cap" class="text-blue-500"></i> Education
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 rounded-3xl bg-zinc-900/30 border border-zinc-800/50 hover:bg-zinc-900/50 transition-all">
+                    <span class="text-blue-500 font-mono text-xs font-bold uppercase tracking-widest block mb-4">2016 – 2022</span>
+                    <h4 class="text-xl font-bold text-white mb-2">Bachelor of Technology</h4>
+                    <p class="text-zinc-400 text-sm mb-4">Agriculture Engineering</p>
+                    <p class="text-zinc-600 text-xs">G.B. Pant University of Agriculture and Technology, Pantnagar</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-zinc-900/30 border border-zinc-800/50 hover:bg-zinc-900/50 transition-all">
+                    <span class="text-blue-500 font-mono text-xs font-bold uppercase tracking-widest block mb-4">2013 – 2016</span>
+                    <h4 class="text-xl font-bold text-white mb-2">Diploma in Civil Engineering</h4>
+                    <p class="text-zinc-400 text-sm mb-4">Government Polytechnic Nainital</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 px-6 md:px-20 max-w-5xl mx-auto border-t border-zinc-900 mb-20">
+            <div class="bg-blue-600 rounded-[3rem] p-10 md:p-20 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl group-hover:bg-white/20 transition-all duration-700"></div>
+                <div class="relative z-10 text-center md:text-left">
+                    <h2 class="text-4xl md:text-6xl font-bold text-white mb-8 tracking-tighter">Let's build growth.</h2>
+                    <p class="text-blue-100 text-lg mb-12 max-w-xl leading-relaxed">
+                        Currently open to select performance marketing opportunities and consultancy audits.
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <a href="mailto:khileshsammal.work@gmail.com" class="flex items-center gap-4 group/btn">
+                            <div class="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center text-white group-hover/btn:scale-110 group-hover/btn:bg-white/30 transition-all">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-blue-200 text-xs font-bold uppercase tracking-widest">Email Me</p>
+                                <p class="text-white font-bold">khileshsammal.work@gmail.com</p>
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-4 group/btn">
+                            <div class="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center text-white group-hover/btn:scale-110 group-hover/btn:bg-white/30 transition-all">
+                                <i data-lucide="phone" class="w-5 h-5"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-blue-200 text-xs font-bold uppercase tracking-widest">Call Me</p>
+                                <p class="text-white font-bold">+91 9759323888</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle">My Information</span>
+            <div class="mt-20 flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-zinc-900">
+                <p class="text-zinc-500 text-sm">© <span id="year"></span> Khilesh Sammal. Performance Marketing Expert.</p>
+                <div class="flex gap-6 text-zinc-500 text-sm">
+                    <a href="https://linkedin.com/in/khileshsammal" target="_blank" class="hover:text-blue-500 transition-colors">LinkedIn</a>
+                    <a href="https://github.com/khileshsammal" target="_blank" class="hover:text-blue-500 transition-colors">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-                <div class="about__container container grid">
-                    <img src="assets/img/about.jpeg" alt="about" class="about__img">
+    <script>
+        // Data for Experience and Skills
+        const experience = [
+            {
+                company: "BeasyFit",
+                role: "Junior Performance Marketing Specialist",
+                period: "Oct 2025 – Present",
+                description: "Leading multi-channel paid media and digital infrastructure optimization.",
+                points: [
+                    "Boosted qualified leads by 20-30% and reduced CPA by 15-20% through Google (Demand Gen, PMax) and Meta Ads.",
+                    "Implemented custom GTM events and audiences, enhancing data accuracy for holistic performance auditing.",
+                    "Improved website loading speed by 5-10% and managed CMS updates via WordPress.",
+                    "Automated marketing workflows using Pabbly Connect and designed 80+ high-CTR visual assets.",
+                    "Directly oversaw all organic social media channels (IG, YT, FB) and internal asset organization."
+                ],
+                current: true
+            },
+            {
+                company: "Independent Consultant",
+                role: "Performance Marketing Consultant",
+                period: "Jul 2025 – Present",
+                description: "Delivering high-ROI lead generation and e-commerce growth for regional and retail brands.",
+                points: [
+                    "Luminaura Candles: Achieved 50-70% sales growth during major holiday periods (Diwali, Black Friday).",
+                    "Uttarakhand Bike Rental: Increased booking leads by 30% and improved ROAS by 25-30% via local SEO & GBP.",
+                    "Executed high-intent retail campaigns across major sales events (Thanksgiving, Christmas).",
+                    "Implemented customer response automation while maintaining high-touch manual satisfaction support."
+                ],
+                current: true
+            },
+            {
+                company: "Cognizant Technology Services",
+                role: "Google Ads Operations Analyst",
+                period: "2024 – 2025",
+                description: "Managed high-volume Google Ads operations for diverse global markets.",
+                points: [
+                    "Managed 220+ SMB accounts monthly across EMEA, APAC, and LATAM regions.",
+                    "Optimized complex Search & App campaigns using proprietary MoMA tools.",
+                    "Maintained a consistent 90% Customer Satisfaction (CSAT) score.",
+                    "Spearheaded technical troubleshooting and campaign performance scaling."
+                ]
+            },
+            {
+                company: "Sony India Private Limited",
+                role: "Trainee Technical Support",
+                period: "2023",
+                description: "Focused on technical sales troubleshooting and performance analysis.",
+                points: [
+                    "Translated complex sales data into actionable satisfaction strategies.",
+                    "Executed ecosystem-wide technical troubleshooting for consumer electronics.",
+                    "Conducted training for new hires on technical sales methodologies.",
+                    "Identified key growth opportunities through market trend analysis."
+                ]
+            }
+        ];
 
-                    <div class="about__data">
-                        <p class="about__description">
-                          Google Ads Search Campaign Specialist with 15 months of experience at Cognizant, managing and optimizing search campaigns for global clients. 
-                          Skilled in keyword research, ad copy optimization, A/B testing, and performance analysis </p> 
-                          <p>Proficient in Google Ads, Google Analytics, and Excel. 
-                          Known for delivering data-driven results, adhering to SLAs, and continuously improving ROI through strategic insights.
-                        </p>
+        const skillGroups = [
+            { category: "Paid Media", icon: "target", skills: ["Google Ads (PMax, Demand Gen)", "Meta Ads", "Search Ads", "App Campaigns", "Lead Gen"] },
+            { category: "Analytics & Data", icon: "bar-chart-3", skills: ["GTM", "GA4", "MS Clarity", "Looker Studio", "Excel Automation"] },
+            { category: "Tools & Ops", icon: "cpu", skills: ["Pabbly Connect", "WordPress", "Canva", "Slack/Drive Ops", "Response Automation"] }
+        ];
 
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">2+</span>
-                                <span class="about__info-name">Years <br> experience</span>
-                            </div>
-<!--this to hidden 
-                            <div>
-                                <span class="about__info-title">05+</span>
-                                <span class="about__info-name">Completed <br> project</span>
-                            </div>
--->
-                            <div>
-                                <span class="about__info-title">02</span>
-                                <span class="about__info-name">Companies <br> worked</span>
-                            </div>
-                        </div>
-
-                        <div class="about__buttons">
-                            <a href="#contact" class="button button--flex">
-                                Contact me <i class="uil uil-message button__icon"></i>
-                             </a>
+        // Render Functions
+        function renderExperience() {
+            const container = document.getElementById('experience-container');
+            container.innerHTML = experience.map((exp, idx) => `
+                <div class="group relative">
+                    <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-4 gap-2">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-blue-500 transition-colors">
+                            ${exp.role} <span class="text-zinc-600 font-normal ml-2">@ ${exp.company}</span>
+                        </h3>
+                        <div class="flex items-center gap-3">
+                            ${exp.current ? '<span class="px-2 py-0.5 bg-blue-500/10 text-blue-500 text-[10px] font-bold uppercase tracking-wider rounded">Current</span>' : ''}
+                            <span class="text-sm font-mono text-zinc-500">${exp.period}</span>
                         </div>
                     </div>
-                </div>
-            </section>
-
-<!--==================== QUALIFICATION ====================-->
-<section class="qualification section" id="qualification">
-  <h2 class="section__title">Qualification</h2>
-  <span class="section__subtitle">My Personal Journey</span>
-
-  <!--=========== EXPERIENCE ===========-->
-  <div class="qualification__tabs">
-    <div class="qualification__button button--flex button">
-      <i class="uil uil-briefcase-alt qualification__icon"></i>
-      Experience
-    </div>
-
-    <div class="qualification__sections">
-      <div class="qualification__content" data-content id="experience">
-
-        <!-- EXPERIENCE 1 -->
-        <div class="qualification__data">
-          <div>
-            <span class="qualification__rounder"></span>
-            <span class="qualification__line"></span>
-          </div>
-          <div></div>
-          <div class="qualification__titles">
-            <h3 class="qualification__title">Google Ads Operations Analyst</h3>
-            <span class="qualification__subtitle">Cognizant Technology Services</span>
-            <div class="qualification__calender">
-              <i class="uil uil-map-marker-alt"></i>New Delhi, India |
-              <i class="uil uil-calendar-alt"></i>
-              March 2024 – August 2025 | On-Site
-            </div>
-            <div class="qualification__calender">
-                <br>
-              <ul style="list-style-type: disc; max-width: 865px; text-align: left;">
-                <li><h3>End-to-End Campaign Management:</h3>Managed and optimized Google Ads Search and App campaigns for 220+ SMB accounts per month across 15+ countries in EMEA, APAC, and LATAM.</li>
-                <li><h3>Data-Driven Decision Making:</h3> Used MoMA and internal tools to improve campaign performance and ROI.</li>
-                <li><h3>Client Collaboration & Communication:</h3>Delivered multi-channel support (phone, chat, and email) to Customer Experience and Account Managers, achieving a 90% CSAT score while adhering to SLA targets.</li>
-                <li><h3>Continuous Learning & Best Practices:</h3>Completed in-depth training on Google Ads best practices and gained hands-on experience with MoMA and troubleshooting tools.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-<br>
-<br>
-
-        <!-- EXPERIENCE 2 -->
-        <div class="qualification__data">
-          <div>
-            <span class="qualification__rounder"></span>
-            <span class="qualification__line"></span>
-          </div>
-          <div></div>
-          <div class="qualification__titles">
-            <h3 class="qualification__title">Trainee Technical Support</h3>
-            <span class="qualification__subtitle">Sony India Private Limited</span>
-            <div class="qualification__calender">
-             <i class="uil uil-map-marker-alt"></i>New Delhi, Delhi |
-              <i class="uil uil-calendar-alt"></i>
-              Jan 2023 – Dec 2023 | On-Site
-            </div>
-            <div class="qualification__calender">
-              <ul style="list-style-type:disc; max-width: 865px; text-align: left;">
-              <li><h3>Sales Support Expertise:</h3> Delivered tailored sales support to enhance customer decision-making.</li>
-              <li><h3>Technical Support Specialist:</h3> Ensured smooth product use through tech support and technical troubleshooting.</li>
-              <li><h3>Decision Making:</h3> Interpreted sales data to guide strategy and improve client satisfaction.</li>
-              <li><h3>Sales Report Analysis:</h3> Evaluated performance trends and areas of improvement.</li>
-              <li><h3>Customer Relationship Management:</h3> Built strong client relationships through proactive communication and data-backed recommendations.</li>
-             <li><h3>Training & Enablement:</h3> Empowered new sales hires through comprehensive product and technical training, accelerating onboarding and performance.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--===========  EDUCATION ===========-->
-  <div class="qualification__tabs">
-    <div class="qualification__button button--flex button">
-      <i class="uil uil-graduation-cap qualification__icon"></i>
-      Education
-    </div>
-
-    <div class="qualification__sections">
-      <div class="qualification__content" data-content id="education">
-        <!-- Education 1 -->
-        <div class="qualification__data">
-          <div>
-            <span class="qualification__rounder"></span>
-            <span class="qualification__line"></span>
-          </div>
-          <div></div>
-          <div class="qualification__titles">
-            <h3 class="qualification__title">Bachelor of Technology</h3>
-            <span class="qualification__subtitle">Govind Ballabh Pant University of Agriculture and Technology</span>
-            <div class="qualification__calender">
-              <i class="uil uil-map-marker-alt"></i>
-              Pantnagar, Uttarakhand |
-              <i class="uil uil-calendar-alt"></i>
-              2016 – 2022
-            </div>
-            <div class="qualification__calender">
-              <i class="uil uil-graduation-cap"></i>
-              CGPA: 6.0 / 10.0
-            </div>
-          </div>
-        </div>
-<br>
-<br>
-        <!-- Education 2 -->
-        <div class="qualification__data">
-          <div>
-            <span class="qualification__rounder"></span>
-            <span class="qualification__line"></span>
-          </div>
-          <div></div>
-          <div class="qualification__titles">
-            <h3 class="qualification__title">Diploma in Civil Engineering</h3>
-            <span class="qualification__subtitle">Govt Polytechnic Nainital</span>
-            <div class="qualification__calender">
-              <i class="uil uil-map-marker-alt"></i>
-              Nainital, Uttarakhand |
-              <i class="uil uil-calendar-alt"></i>
-              2013 – 2016
-            </div>
-            <div class="qualification__calender">
-              <i class="uil uil-graduation-cap"></i>
-              Percentage: 75%
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">Technical Proficiency</span>
-
-                <div class="skills__container container grid">
-                    <div>
-                        <!--==================== SKILLS 1 ====================-->
-                        <div class="skills__content skills__open">
-                            <div class="skills__header">
-                                <i class="uil uil-brackets-curly skills__icon"></i>
-
-                                <div>
-                                    <h1 class="skills__title">Proficient</h1>
-<!-- This is hidden  <span class="skills__subtitle">More than 1 Years</span> --> 
-                                </div>
-
-                                <i class="uil uil-angle-down skills__arrow"></i>
+                    <p class="text-zinc-400 mb-8 max-w-3xl italic leading-relaxed">${exp.description}</p>
+                    <div class="space-y-5">
+                        ${exp.points.map(point => `
+                            <div class="flex gap-4 text-sm md:text-base text-zinc-500 hover:text-zinc-300 transition-colors group/point">
+                                <div class="w-1.5 h-1.5 bg-zinc-700 group-hover/point:bg-blue-600 rounded-full mt-2.5 shrink-0 transition-colors"></div>
+                                <span class="leading-relaxed">${point}</span>
                             </div>
-<!-- This is hidden 
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">HTML / CSS</h3>
-                                    <span class="skills__number">95%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__html"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <img src="assets\img\python.png" alt="Python Icon" width="100" height="100">
-                                    <h3 class="skills__name">Python</h3>
-                                </div>
-                           
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name"><a href="https://www.w3schools.com/html/html_css.asp" target="html css"><img src="assets\img\html_css.png" alt="html_css Icon" width="160" height="160"></a></h3>
-                                        <h3 class="skills__name"><a href="https://www.python.org" target="python"><img src="assets\img\python.png" alt="Python Icon" width="90" height="85"></a></h3>
-                                        <h3 class="skills__name"><a href="https://www.javascript.com" target="javascript"><img src="assets\img\js.png" alt="javascript Icon" width="90" height="90"></a></h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name"><a href="https://ubuntu.com" target="Ubuntu"><img src="assets\img\linux.png" alt="linux Icon" width="150" height="150"></a></h3>
-                                        <h3 class="skills__name"><a href="https://www.mysql.com" target="SQL"><img src="assets\img\sql.png" alt="sql Icon" width="200" height="200"></a></h3>
-                                        <h3 class="skills__name"><a href="https://www.gnu.org/software/bash" target="Bash"><img src="assets\img\bash.jpg" alt="Bash Icon" width="130" height="60"></a></h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name"><a href="https://powerbi.microsoft.com" target="powerbi"><img src="assets\img\powerbi.png" alt="powerbi Icon" width="150" height="150"></a></h3>
-                                        <h3 class="skills__name"><a href="https://www.w3schools.com/cybersecurity" target="cybersecurity"><img src="assets\img\cybersecurity.webp" alt="cybersecurity Icon" width="130" height="100"></a></h3>
-                                    </div>
-                                </div>
-                            </div>
--->
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name"><a href="https://ads.google.com" target="google ads"><img src="assets\img\ads.png" alt="Google ads Icon" width="250" height="200"></a></h3>
-                                        <h3 class="skills__name"><a href="https://marketingplatform.google.com/about/analytics/" target="analytics"><img src="assets\img\analytics.png" alt="Google analytics Icon" width="250" height="200"></a></h3>
-                                        <h3 class="skills__name"><a href="https://www.office.com" target="msoffice"><img src="assets\img\msoffice.png" alt="msoffice Icon" width="150" height="150"></a></h3>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
- 
-<!-- this is hidden
-                           <--==================== SKILLS 2 ====================--
-                        <div class="skills__content skills__open">
-                            <div class="skills__header">
-                                <i class="uil uil-server-network skills__icon"></i>
-
-                                <div>
-                                    <h1 class="skills__title">Familiar</h1>
-                                    <-- <span class="skills__subtitle">More than 1 Years</span> --
-                                </div>
-
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">,</h3>
-                                        <h3 class="skills__name">,</h3>
-                                        <h3 class="skills__name">,</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">,</h3>
-                                        <h3 class="skills__name">,</h3>
-                                        <h3 class="skills__name">TypeScript,</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">,</h3>
-                                        <h3 class="skills__name"></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        `).join('')}
                     </div>
                 </div>
-            </section>
--->
-            <!--==================== SERVICES ====================-->
-            <!-- <section class="services section" id="services">
+            `).join('');
+        }
+
+        function renderSkills() {
+            const container = document.getElementById('skills-container');
+            container.innerHTML = skillGroups.map(group => `
+                <div class="p-8 rounded-3xl bg-zinc-900/50 border border-zinc-800 hover:border-zinc-700 transition-all group">
+                    <div class="w-12 h-12 bg-blue-600/10 rounded-2xl flex items-center justify-center text-blue-500 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <i data-lucide="${group.icon}" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="text-white font-bold mb-4">${group.category}</h4>
+                    <div class="flex flex-wrap gap-2">
+                        ${group.skills.map(skill => `<span class="px-3 py-1 bg-zinc-800 rounded-lg text-xs font-medium text-zinc-400">${skill}</span>`).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Initialize Page
+        window.addEventListener('DOMContentLoaded', () => {
+            renderExperience();
+            renderSkills();
+            lucide.createIcons();
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Simple scroll spy for nav highlighting
+            window.addEventListener('scroll', () => {
+                const sections = ['home', 'experience', 'skills', 'education', 'contact'];
+                let current = 'home';
                 
-            </section> -->
+                sections.forEach(section => {
+                    const element = document.getElementById(section);
+                    if (window.scrollY >= (element.offsetTop - 200)) {
+                        current = section;
+                    }
+                });
 
-            <!--==================== PORTFOLIO ====================-->
-            <!-- <section class="portfolio section" id="portfolio">
-                
-            </section> -->
-
-<!-- This is hidden 
-            ==================== PROJECT IN MIND ====================
-            <section class="section">
-                <h2 class="section__title">Notable Projects</h2>
-                <span class="section__subtitle">---------------</span>
-                <div class="projects" id="project">
-                    <div class="project__container project project__bg container">
-                        <div class="project__data">
-                            <h2 class="project__title"> </h2>
-                            <div class="qualification__calender">
-                                <i class="uil uil-map-marker-alt"></i>
-                                location |
-                                <i class="uil uil-calendar-alt"></i>
-                                June 2022 – July 2022
-                            </div>
-
-                            <p class="project__description">
-                                <ul style="list-style-type:disc; max-width: 865px; text-align: left; color: white;">
-                                    <li>        </li>
-                                    <li>       </li>
-                                    <li>       </li>
-                                </ul>
-                            </p>
-                            <a href=" " class="project__button button--flex button">
-                                <i class="uil uil-message"></i>
-                                Website Link
-                            </a>
-                        </div>
-
-                        <img src="assets/img/Tenants.png" alt="" class="project__img">
-                    </div>
-
-                    <div class="project__container project project__bg container">
-                        <div class="project__data">
-                            <h2 class="project__title">      </h2>
-                            <div class="qualification__calender">
-                                <i class="uil uil-map-marker-alt"></i>
-                                Location |
-                                <i class="uil uil-calendar-alt"></i>
-                                Date
-                            </div>
-
-                            <p class="project__description">
-                                <ul style="list-style-type:disc; max-width: 865px; text-align: left; color: white;">
-                                    <li>    </li>
-                                    <li>    </li>
-                                </ul>
-                            </p>
-                            <a href="  " class="project__button button--flex button">
-                                <i class="uil uil-message"></i>
-                                Website Link
-                            </a>
-                        </div>
-
-                        <img src="a" alt="" class="project__img">
-                    </div>
-                </div>
-            </section>
--->
-            <!--==================== TESTIMONIAL ====================
-             <section class="testimonial section">
-                
-            </section> -->
-
-<!--==================== CONTACT ME ====================-->
-<section class="contact section" id="contact">
-    <h2 class="section__title">Contact Me</h2>
-    <span class="section__subtitle">Get in touch</span>
-
-    <div class="contact__container container grid">
-        <div>
-            <div class="contact__information">
-                <i class="uil uil-phone contact__icon"></i>
-                <div>
-                    <h3 class="contact__title">Call Me</h3>
-                    <span class="contact__subtitle">+91 9759323888</span>
-                </div>
-            </div>
-
-            <div class="contact__information">
-                <i class="uil uil-envelope contact__icon"></i>
-                <div>
-                    <h3 class="contact__title">Email</h3>
-                    <span class="contact__subtitle">khileshsammal.work@gmail.com</span>
-                </div>
-            </div>
-
-            <div class="contact__information">
-                <i class="uil uil-map-marker-alt contact__icon"></i>
-                <div>
-                    <h3 class="contact__title">Location</h3>
-                    <span class="contact__subtitle">Haldwani, Uttarakhand</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-</main>
-
-<!--==================== FOOTER ====================-->
-<footer class="footer">
-    <div class="footer__bg">
-        <div class="footer__container container grid">
-            <div>
-                <h1 class="footer__title">Khilesh Sammal</h1>
-                <span class="footer__subtitle">Google Ads Operations Analyst</span>
-            </div>
-
-            <ul class="footer__links">
-                <!-- 
-                <li>
-                    <a href="#services" class="footer__link">Services</a>
-                </li>
-                <li>
-                    <a href="#portfolio" class="footer__link">Portfolio</a>
-                </li>
-                -->
-                <li>
-                    <a href="#contact" class="footer__link">Contact</a>
-                </li>
-            </ul>
-
-            <div class="footer__socials">
-                <a href="https://www.facebook.com/" target="_blank" class="footer__social">
-                    <i class="uil uil-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" class="footer__social">
-                    <i class="uil uil-instagram"></i>
-                </a>
-                <a href="https://www.twitter.com/" target="_blank" class="footer__social">
-                    <i class="uil uil-twitter-alt"></i>
-                </a>
-                <a href="https://www.youtube.com" target="_blank" class="footer__social">
-                    <i class="uil uil-youtube"></i>
-                </a>
-            </div>
-        </div>
-
-        <p class="footer__copy">&#169; Khilesh Sammal. All right reserved</p>
-    </div>
-</footer>
-        <!--==================== SCROLL TOP ====================-->
-
-        <!--==================== SWIPER JS ====================-->
-        <!-- <script src=""></script> -->
-
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-    </body>
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('bg-zinc-800', 'text-blue-500');
+                    link.classList.add('text-zinc-500');
+                    if (link.getAttribute('data-section') === current) {
+                        link.classList.add('bg-zinc-800', 'text-blue-500');
+                        link.classList.remove('text-zinc-500');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
 </html>
